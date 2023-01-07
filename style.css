@@ -1,0 +1,132 @@
+/* Basisc styling */
+
+a strong {
+  color: inherit;
+}
+
+hr {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #d8dee9;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+pre {
+  overflow: auto;
+  white-space: pre-wrap;
+}
+
+/* Initial state */
+
+#logo,
+section {
+  display: none;
+}
+
+#start {
+  display: block;
+}
+
+/* Sate */
+
+html.step0 #state {
+  display: block;
+}
+
+/* Components */
+
+html.step1 #components {
+  display: block;
+}
+
+html.step1 header,
+html.step1 main {
+  margin: 0 auto;
+  max-width: 50em;
+}
+
+/* devtools*/
+
+html.step2 #devtools {
+  display: block;
+}
+
+html.step2 body {
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+html.step2 header {
+  background-color: #263d36;
+  background-image: url("background.webp");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  line-height: 1.2;
+  max-width: none;
+  padding: 10vw 2em;
+  text-align: center;
+}
+
+html.step2 #logo {
+  display: inline-block;
+  height: 120px;
+  vertical-align: top;
+  width: 120px;
+}
+
+html.step2 header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+html.step2 header a {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: none 200ms ease-out;
+  transition: none 200ms ease-out;
+  -webkit-transition-property: color, background;
+  transition-property: color, background;
+}
+
+html.step2 header a:hover {
+  background: #e81c4f;
+  color: white;
+}
+
+.animate {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-name: blink;
+  animation-name: blink;
+}
+
+@-webkit-keyframes blink {
+  from {
+    background-color: lightyellow;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
+
+@keyframes blink {
+  from {
+    background-color: lightyellow;
+  }
+
+  to {
+    background-color: transparent;
+  }
+}
